@@ -50,26 +50,38 @@ var swiper = new Swiper(".home-slider", {
   loop: true,
 });
 
+// var swiper = new Swiper(".review-slider", {
+//   spaceBetween: 20,
+//   centeredSlides: true,
+//   autoplay: {
+//     delay: 7500,
+//     disableOnInteraction: false,
+//   },
+//   loop: true,
+//   breakpoints: {
+//     0: {
+//       slidePerView: 1,
+//     },
+//     640: {
+//       slidePerView: 2,
+//     },
+//     768: {
+//       slidePerView: 2,
+//     },
+//     1024: {
+//       slidePerView: 3,
+//     },
+//   },
+// });
+
 var swiper = new Swiper(".review-slider", {
+  slidesPerView: 3,
   spaceBetween: 20,
-  centeredSlides: true,
+  slidesPerGroup: 1,
   autoplay: {
-    delay: 7500,
+    delay: 2500,
     disableOnInteraction: false,
   },
   loop: true,
-  breakpoints: {
-    0: {
-      slidePerView: 1,
-    },
-    640: {
-      slidePerView: 2,
-    },
-    768: {
-      slidePerView: 2,
-    },
-    1024: {
-      slidePerView: 3,
-    },
-  },
+  loopFillGroupWithBlank: true,
 });
